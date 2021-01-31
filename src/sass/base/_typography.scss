@@ -1,0 +1,123 @@
+/***********
+ * Fuentes *
+ ***********/
+
+// Fuente variable
+@font-face {
+  font-family: "ManropeVariable";
+  src: url("../fonts/Manrope-VariableFont_wght.ttf")
+    format("truetype-variations");
+  font-weight: 450 750;
+  font-style: normal;
+}
+
+// Fuentes estáticas
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/static/Manrope-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/static/Manrope-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*************************
+ * Estilos de tipografía *
+ *************************/
+
+body {
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: $text-secondary;
+}
+
+.article-preview {
+  &__title {
+    font-weight: 700;
+    color: $text-primary;
+    font-size: 1.66rem;
+  }
+
+  &__excerpt {
+    line-height: 2rem;
+    letter-spacing: 0.25px;
+  }
+
+  &__author-name {
+    &:link,
+    &:visited {
+      color: $text-primary;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    &:hover {
+      color: rgba($text-primary, 0.8);
+    }
+  }
+
+  &__date {
+    color: $text-tertiary;
+  }
+
+  &__share-text {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: $text-tertiary;
+  }
+}
+
+.attribution {
+  a {
+    &:link,
+    &:visited {
+      color: $text-primary;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    &:hover {
+      color: rgba($text-primary, 0.8);
+    }
+  }
+}
+
+/*********************
+ * Fuentes variables *
+ *********************/
+@supports (font-variation-settings: "wght" 500) {
+  body {
+    font-family: "ManropeVariable";
+    font-variation-settings: "wght" 500;
+  }
+
+  .article-preview {
+    &__title {
+      font-variation-settings: "wght" 700;
+    }
+
+    &__author-name:link,
+    &__author-name:visited {
+      font-variation-settings: "wght" 750;
+    }
+
+    &__date {
+      font-variation-settings: "wght" 450;
+    }
+  }
+
+  .attribution {
+    a {
+      &:link,
+      &:visited {
+        font-variation-settings: "wght" 750;
+      }
+    }
+  }
+}

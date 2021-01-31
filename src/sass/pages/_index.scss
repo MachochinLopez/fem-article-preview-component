@@ -1,0 +1,19 @@
+.index-body {
+  background-color: $white;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-preview {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.attribution {
+  margin-top: auto;
+  padding: 1rem 0;
+  padding-top: 5rem;
+  text-align: center;
+}

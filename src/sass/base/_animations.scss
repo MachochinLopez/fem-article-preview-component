@@ -1,0 +1,27 @@
+/*******************
+ * ARTICLE PREVIEW *
+ *******************/
+
+@keyframes share-container-exit {
+  0% {
+    visibility: visible;
+    top: 0;
+  }
+
+  100% {
+    visibility: hidden;
+    top: 7.5rem;
+  }
+}
+
+@keyframes share-container-enter {
+  0% {
+    visibility: hidden;
+    top: 7.5rem;
+  }
+
+  100% {
+    visibility: visible;
+    top: 0;
+  }
+}
