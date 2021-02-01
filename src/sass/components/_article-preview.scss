@@ -78,6 +78,10 @@
     background-color: $white;
     z-index: 100;
 
+    img {
+      width: 1.3rem;
+    }
+
     &:hover {
       cursor: pointer;
     }
@@ -115,15 +119,34 @@
       animation-name: share-container-exit;
       animation-duration: 0.75s;
     }
+
+    @include respond(small-device) {
+      flex-direction: column;
+      text-align: center;
+      padding: 1.8rem 9%;
+      padding-right: 30%;
+    }
   }
 
   &__share-text {
-    margin-right: 2rem;
+    margin-right: 7.5%;
     margin-top: 1.5px;
+
+    @include respond(small-device) {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  &__sharing-buttons-container {
+    width: 100%;
   }
 
   &__share-icon-option {
-    margin-right: 1.75rem;
+    margin-right: 5%;
     cursor: pointer;
     background: transparent;
     border: none;
@@ -134,6 +157,16 @@
 
     &:hover {
       opacity: 0.8;
+    }
+
+    img {
+      width: 2rem;
+    }
+
+    @include respond(small-device) {
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
