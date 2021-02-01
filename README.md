@@ -2,7 +2,7 @@
 
 ![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)
 
-Live demo: https://vercel.com/machochinlopez/fem-article-preview-component
+Live demo: https://fem-article-preview-component-blond.vercel.app/
 
 ## Welcome! 👋
 
