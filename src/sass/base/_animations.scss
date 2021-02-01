@@ -25,3 +25,27 @@
     top: 0;
   }
 }
+
+@keyframes share-popup-enter {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes share-popup-exit {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}

@@ -42,6 +42,20 @@ body {
     font-weight: 700;
     color: $text-primary;
     font-size: 1.66rem;
+
+    @include respond(tablet) {
+      font-size: 2rem;
+    }
+
+    &:link,
+    &:visited {
+      color: $text-primary;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: rgba($text-primary, 0.8);
+    }
   }
 
   &__excerpt {
