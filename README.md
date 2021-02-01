@@ -2,6 +2,8 @@
 
 ![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)
 
+Live demo: https://vercel.com/machochinlopez/fem-article-preview-component
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
